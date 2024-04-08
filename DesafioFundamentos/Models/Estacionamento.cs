@@ -19,7 +19,7 @@ namespace DesafioFundamentos.Models
             Console.WriteLine("Digite a placa do veículo para estacionar:");
             string placa = Console.ReadLine();
 
-            if(placa.Length > 0) {
+            if(placa.Length > 0 && Validador.EhValida(placa)) {
               veiculos.Add(placa);
             } else {
                 Console.WriteLine("Placa inválida!");
